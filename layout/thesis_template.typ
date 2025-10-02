@@ -82,7 +82,8 @@
   // --- Headings ---
   show heading: set block(below: 0.85em, above: 1.75em)
   show heading: set text(font: fonts.body)
-  set heading(numbering: "1.1")
+  set heading(numbering: "1.")
+  show heading.where(level: 4): set heading(numbering: none, outlined: false)
   // Reference first-level headings as "chapters"
   show ref: it => {
     let el = it.element
