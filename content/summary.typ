@@ -1,4 +1,5 @@
-#import "/utils/todo.typ": TODO
+#import "/utils/todo.typ": TODO 
+#import "../utils/icons.typ": check, cross
 
 = Summary<summary>
 #TODO[
@@ -7,13 +8,10 @@
 The following final chapter summarizes the work done as part of this thesis. We first present the status of the functional requirements, distinguishing between realized and open goals. We then describe the realized goals in more detail, highlighting the functionality that we successfully implemented. After that, we turn to the open goals, explaining the requirements that we could not yet address and the reasons behind these gaps. Finally, we conclude the thesis by reflecting on the contributions of the work and outlining opportunities for future research and development.
 
 == Status
-#let realized = emoji.checkmark.box
-#let inProgress = emoji.hammer
-#let open = emoji.crossmark
 #TODO[
   Describe honestly the achieved goals (e.g. the well implemented and tested use cases) and the open goals here. if you only have achieved goals, you did something wrong in your analysis.
 ]
-In the following tables we recapitulate on the functional requirements defined in @requirements and evaluate their implementation status. We mark realized requirements with #realized and open ones with #open.
+In the following tables we recapitulate on the functional requirements defined in @requirements and evaluate their implementation status. We mark realized requirements with #check and open ones with #cross.
 
 
 #figure(
@@ -22,18 +20,18 @@ In the following tables we recapitulate on the functional requirements defined i
     columns: (1fr, auto),
     align: (left, center),
     [*Functional Requirement*], [*Status*],
-    [FR1 Inspect events in month presentation on big devices], [#realized],
-    [FR2 Inspect events in month presentation on small devices], [#realized],
-    [FR3 Inspect events in week presentation on big devices], [#realized],
-    [FR4 Inspect events in day presentation on small devices], [#realized],
-    [FR5 Inspect event details], [#realized],
-    [FR6 Navigate backwards in time], [#realized],
-    [FR7 Navigate forward in time], [#realized],
-    [FR8 Navigate to today], [#realized],
-    [FR9 Filter events], [#realized],
-    [FR10 Copy subscription link], [#realized],
-    [FR11 Configure events for subscription], [#realized],
-    [FR12 Configure language for subscription], [#realized],
+    [FR1 Inspect events in month presentation on big devices], [#check],
+    [FR2 Inspect events in month presentation on small devices], [#check],
+    [FR3 Inspect events in week presentation on big devices], [#check],
+    [FR4 Inspect events in day presentation on small devices], [#check],
+    [FR5 Inspect event details], [#check],
+    [FR6 Navigate backwards in time], [#check],
+    [FR7 Navigate forward in time], [#check],
+    [FR8 Navigate to today], [#check],
+    [FR9 Filter events], [#check],
+    [FR10 Copy subscription link], [#check],
+    [FR11 Configure events for subscription], [#check],
+    [FR12 Configure language for subscription], [#check],
   )
 )
 
@@ -43,11 +41,11 @@ In the following tables we recapitulate on the functional requirements defined i
     columns: (1fr, auto),
     align: (left, center),
     [*Functional Requirement*], [*Status*],
-    [FR13 Create Lecture series], [#realized],
-    [FR14 Create Planned Exercise series], [#realized],
-    [FR15 Inspect Planned Exercises], [#realized],
-    [FR16 Manage Planned Exercises], [#realized],
-    [FR17 Create Exercise with Planned Exercise], [#realized],
+    [FR13 Create Lecture series], [#check],
+    [FR14 Create Planned Exercise series], [#check],
+    [FR15 Inspect Planned Exercises], [#check],
+    [FR16 Manage Planned Exercises], [#check],
+    [FR17 Create Exercise with Planned Exercise], [#check],
   )
 )
 
@@ -57,10 +55,10 @@ In the following tables we recapitulate on the functional requirements defined i
     columns: (1fr, auto),
     align: (left, center),
     [*Functional Requirement*], [*Status*],
-    [FR18 Inspect all or future events], [#open],
-    [FR19 Inspect event details], [#open],
-    [FR20 Filter events], [#open],
-    [FR21 Manage administrative event], [#open],
+    [FR18 Inspect all or future events], [#cross],
+    [FR19 Inspect event details], [#cross],
+    [FR20 Filter events], [#cross],
+    [FR21 Manage administrative event], [#cross],
   )
 )
 
