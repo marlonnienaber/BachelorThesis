@@ -160,9 +160,9 @@
   ]
 
   // Appendix.
-  pagebreak()
-  heading(numbering: none)[Appendix A: Supplementary Material]
-  include("/layout/appendix.typ")
+  //pagebreak()
+  //heading(numbering: none)[Appendix A: Supplementary Material]
+  //include("/layout/appendix.typ")
 
   pagebreak()
   bibliography("/thesis.bib")
